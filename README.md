@@ -26,6 +26,9 @@ flowchart LR
 ```
 
 ## Sub Contractor Packaging
+### Sub contractor pre qualification
+
+### Sub Package Creation
 ```mermaid
 ---
 config:
@@ -37,10 +40,10 @@ flowchart LR
   B --> C[Select BoQ items]
   C --> D[Generate package BoQ]
   D --> E[Select documents]
-  E --> F[Approve Package]
+  E --> F[Review / Approve Package]
   F --> G((O))
 ```
-## Sub Contractor Packaging
+### Sub-contractor invitation to tender
 ```mermaid
 ---
 config:
@@ -48,9 +51,13 @@ config:
   look: handDrawn
 ---
 flowchart LR
-  A((    )) --> B[Pick suitable subbies]
-  B --> C[Review Instructions]
-  C --> D[Attach package docs]
+
+  A((    )) --> B[Review Instructions]
+  B --> C[Pick suitable subbies]
+  C --> C1{PPQ}
+  C1 -->|No| C2[Review sub contrator]
+  C2 --> D[Attach package docs]
+  C1 -->|Yes| D[Attach package docs]
   D --> E[Attach contracts]
   E --> F[Send email]
   F -->G((O))
