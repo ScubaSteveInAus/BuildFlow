@@ -35,7 +35,12 @@ config:
 flowchart LR
   A((    )) --> B[Create Package]
   B --> C[Select BoQ items]
-  C --> D[Select documents]
-  D --> E[Approve Package]
-  E -->F((O))
+  C --> D[Generate package BoQ]
+  D --> E[Select documents]
+  E --> F[Approve Package]
+  F --> G((O))
+```
+## Sub Contractor Packaging
+```mermaid
+
 ```
