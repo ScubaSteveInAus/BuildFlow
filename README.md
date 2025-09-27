@@ -42,5 +42,16 @@ flowchart LR
 ```
 ## Sub Contractor Packaging
 ```mermaid
-
+---
+config:
+  layout: elk
+  look: handDrawn
+---
+flowchart LR
+  A((    )) --> B[Pick suitable subbies]
+  B --> C[Review Instructions]
+  C --> D[Attach package docs]
+  D --> E[Attach contracts]
+  E --> F[Send email]
+  F -->G((O))
 ```
