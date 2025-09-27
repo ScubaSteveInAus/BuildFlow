@@ -1,5 +1,6 @@
-# BuildFlow
-Construction management
+# BuildFlow Construction management
+
+# Tender Management
 ```mermaid
 flowchart LR
     A(Receive RFT)
@@ -22,4 +23,20 @@ flowchart LR
     G --> H
     H --> I
     I --> J
+```
+
+# Sub Contractor Packaging
+```mermaid
+---
+config:
+  layout: elk
+  look: handDrawn
+  theme: dark
+---
+flowchart LR
+  A((    )) --> B[Create Package]
+  B --> C[Select BoQ items]
+  C --> D[Select documents]
+  D --> E[Approve Package]
+  E -->F((O))
 ```
