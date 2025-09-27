@@ -31,7 +31,6 @@ flowchart LR
 config:
   layout: elk
   look: handDrawn
-  theme: dark
 ---
 flowchart LR
   A((    )) --> B[Create Package]
