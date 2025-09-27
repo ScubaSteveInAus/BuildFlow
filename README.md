@@ -1,6 +1,6 @@
 # BuildFlow Construction management
 
-# Tender Management
+## Tender Management
 ```mermaid
 flowchart LR
     A(Receive RFT)
@@ -25,7 +25,7 @@ flowchart LR
     I --> J
 ```
 
-# Sub Contractor Packaging
+## Sub Contractor Packaging
 ```mermaid
 ---
 config:
