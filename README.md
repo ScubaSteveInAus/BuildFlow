@@ -10,9 +10,11 @@ flowchart LR
     E(Prepare RFT quote)
     F(Submit quote)
     G(Tender awarded)
-    H(Value engineering)
-    I(Finalise costing)
-    J(Contract)
+    H(Client Value engineering)
+    I(Finalise Quote)
+    J(Client Contract)
+    K(Sub-contractor value engineering)
+    L(Issue Sub Contracts)
 
     A --> B
     B --> C
@@ -23,6 +25,8 @@ flowchart LR
     G --> H
     H --> I
     I --> J
+    J --> K
+    K --> L
 ```
 
 ## Sub Contractor Packaging
